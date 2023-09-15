@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.vaishnav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/png;base64,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">
+</head>
+<body>
+   
+    <div id="amazon">
+          <div id="main">
+               <a href="#" class="name">amazon.in</a>
+               <a href="account.html" class="nav">Account</a>
+               <a href="#" class="nav">My Cart</a>
+               <a href="#" class="nav">Contact Us </a> 
+         
+               <input type="search" placeholder="Search.amazon.in">
+               <button class="headbtn">search</button>
+
+               
+       
+       
+        </div>
+   
+    <hr>
+         <div id="main-b">
+              <a href="#" class="fama">All</a>
+                <a href="#" class="fam">Amazon miniTV</a>
+                   <a href="#" class="fam">Sell</a>
+                     <a href="#" class="fam">Best Seller</a>
+                        <a href="#" class="fam">Today's Deals</a>
+                           <a href="#" class="fam">Mobile</a>
+                                <a href="#" class="fam">New Release</a>
+                                      <a href="#" class="fam">Customer Servises</a>
+                                         <a href="#" class="fam">Prime</a>
+                                <a href="#" class="fam">Electronics</a>
+                           <a href="#" class="fam">Computers</a>
+                      <a href="#" class="fam">Coupons</a>
+              <a href="#" class="fam">Fashion</a>
+           
+
+         </div>
+    <main>
+       <!--  main body -->
+       
+       <div id="backimg">
+            <div id="divmanagement">
+
+                  <div class="div-a">
+                        Up to 70% off | Clearence Store
+                        <img class="divaimg" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg" alt="">
+                  </div>
+              
+                       <div class="div-b">
+                            Bluetooth Calling Smartwatch 
+                            <img class="divbimg" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg" alt="">
+                       </div>  
+
+                                <div class="div-c">
+                                New arrivals in Toys
+                                  <img class="divcimg" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg" alt="">
+                         </div>  
+
+                  <div class="div-d">
+                        Discover fashion trends
+                        <img class="divdimg" src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2023/March/mp_20230219_ff_desktopsinglecategory_desktop_379x304_1._SY304_CB612639047_.jpg" alt="">
+                  </div>  
+            </div>
+        </div>
+        <div id="maindivb">
+                      <h3 class="divbheading"> Today's Deals</h3>
+
+                          <div class="maindeal">    
+                               <div class="deals">
+                                     <img  class="dealimga" src="https://m.media-amazon.com/images/I/31uoncbEmvL._AC_SY200_.jpg" alt="">
+                                                       <button class="dealbtn">Up To 50% off</button>
+                                                                <br>
+                                                                <p>One Plus New Launch : Bullets Z2 ANC</p> 
+                                             
+                                              <big>₹<b>1,999 </b></big>M.R.P<strike>&nbsp;5,999</strike>   
+                                      
+                               </div>
+                               <div class="dealsa">
+                                           <img  class="dealimga" src="https://m.media-amazon.com/images/I/31NPT3Db0NL._AC_SY200_.jpg" alt="">
+                                                 <br>
+                                                        <button class="dealbtn" >Up To 70% off</button>    
+                                                            <br>
+                                                     <p>boAt Airdope 170 TWS Earbuds with 50H Playtime</p> 
+                                            
+                                             <big>₹<b>1,499 </b></big>M.R.P<strike>&nbsp;3,499</strike>   
+                               </div>
+                               <div class="deals">
+                                                <img  class="dealimgc" src="https://m.media-amazon.com/images/I/61HHS0HrjpL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+                                                    <br>
+                                                    <button class="dealbtn" >Up To 8% off</button>    
+                                                             <br>
+                                                                <p>Apple iPhone 14pro(128gb)</p> 
+                                                          <!-- <strong>Only For Parthu Don It Free Of Cost</strong>    -->
+                                                           <br>
+                                                    <big>₹<b>1,19,999</b></big>M.R.P<strike>&nbsp;1,29,500</strike>   
+                               </div>
+                               <div class="deals">
+                                                <img  class="dealimga" src="https://m.media-amazon.com/images/I/31rQHnbMmsL._AC_SY200_.jpg" alt="">
+                                                    <br>
+                                                    <button class="dealbtnd" >Up To 50% off</button>    
+                                                            <br>
+                                                        <p>Best offer on V-Guard Prodeuct on Amazon</p> 
+                                                           
+                                                 <big>₹<b>25,500</b></big>M.R.P<strike>&nbsp;32,500</strike>   
+                                       
+                               </div>
+                               <div class="deals">
+                                                <img  class="dealimga" src="https://m.media-amazon.com/images/I/51dtEUJ0gbL._AC_SY200_.jpg" alt="">
+                                                   <br>
+                                                      <button class="dealbtn" >Up To 50% off</button>    
+                                                             <br>
+                                                      <p> Grift Shoes And FootWears</p> 
+                                       
+                                                
+                               </div>
+                               <div class="deals">
+                                                    <img  class="dealimga" src="https://m.media-amazon.com/images/I/31i8GB3mD2L._AC_SY200_.jpg" alt="">
+                                                             <br>
+                                                                 <button class="dealbtn" >Up To 40% off</button>    
+                                                                <br>
+                                                           <p> Water Science Cleo Shower </p> 
+                                                           <big>₹<b>500</b></big>M.R.P<strike>&nbsp;900</strike>      
+                               </div>
+                  </div>        
+        </div>
+        <div id="maindivc">
+                     <h3 id="maincname">Up to 50% off | Get your essential groceries here!</h3>
+
+                     <div id="dealsoftheday">
+
+                                          <div class="grosary">
+                                                 <img src="https://m.media-amazon.com/images/I/81GwLV-WnKL._AC_SY200_.jpg" alt="">
+                                          </div>
+                                          <div class="grosary">
+                                                  <img src="https://m.media-amazon.com/images/I/81-NCW8o55L._AC_SY200_.jpg" alt="">
+                                          </div>
+                                          <div class="grosary">
+                                                   <img src="https://m.media-amazon.com/images/I/819lP5QQmKL._AC_SY200_.jpg" alt="">
+                                          </div>
+                                          <div class="grosary">
+                                                    <img src="https://m.media-amazon.com/images/I/81jiXKhGCCL._AC_SY200_.jpg" alt="">
+                                          </div>
+                                          <div class="grosary">
+                                                        <img src="https://m.media-amazon.com/images/I/6110W-ip6bL._AC_SY200_.jpg" alt="">
+                                          </div>
+                                          <div class="grosary">
+                                                    <img src="https://m.media-amazon.com/images/I/81LDmGkQGSL._AC_SY200_.jpg" alt="">
+                                          </div>
+                                          <div class="grosary">
+                                            <img src="https://m.media-amazon.com/images/I/71nP5tz4kTL._AC_SY200_.jpg" alt="">
+                                           </div>
+                                         
+                                         
+                        </div>
+                        
+
+                        
+                                
+                    
+        </div>
+        <div id="flipkart">
+
+                  <h3  class="womencloth">Up to 70% off | Decorate your home according to you now</h3>
+                         <div class="baicloth">
+                                   
+                                    <div class="baiimg">
+                                            <img class="imgconst" src="https://m.media-amazon.com/images/I/61+5ukDxJfL._AC_SY200_.jpg" alt="">
+                                 
+                                    </div>
+                                    <div class="baiimg">
+                                               <img class="imgconst"src="https://m.media-amazon.com/images/I/51KYEYoJ+hL._AC_SY200_.jpg" alt="">
+                                     </div>
+                                     <div class="baiimg">
+                                        
+                                               <img class="imgconst"src="https://m.media-amazon.com/images/I/61I75V9jbvL._AC_SY200_.jpg" alt="">
+                                      </div>
+                                      <div class="baiimg">
+                                               <img class="imgconst" src="https://m.media-amazon.com/images/I/71k-LP4useS._AC_SY200_.jpg" alt="">
+                            
+                                     </div>
+                                     <div class="baiimg">
+                                                <img class="imgconst" src="https://m.media-amazon.com/images/I/51iifPqZPTL._AC_SY200_.jpg" alt="">
+                                       </div>
+                                       <div class="baiimg">
+                                                <img class="imgconst" src="https://m.media-amazon.com/images/I/61fD6N8mnOL._AC_SY200_.jpg" alt="">
+                                       </div>
+                                       
+                        </div>  
+
+        </div>
+        <div id="electronics">
+                       <h3 class="electric">Best Sellers in Computers & Accessories</h3>
+                             <div class="electro">
+                                     <div class="intro">
+                                               <img class="intra" src="https://m.media-amazon.com/images/I/61v0-iGlR1L._AC_SY200_.jpg" alt="">
+                                     </div>
+                                     <div class="intro">
+                                                 <img class="intra"  src="https://m.media-amazon.com/images/I/61G5-hNFMYL._AC_SY200_.jpg"  alt="">
+                                     </div>
+                                     <div class="intro">
+                                                    <img class="intra" src="https://m.media-amazon.com/images/I/61q-2yzbBtL._AC_SY200_.jpg" alt="">
+                                     </div>
+                                     <div class="intro">
+                                                    <img class="intra" src="https://m.media-amazon.com/images/I/61zroMjd9FL._AC_SY200_.jpg" alt="">
+                                     </div>
+                                     <div class="intro">
+                                                    <img class="intra" src="https://m.media-amazon.com/images/I/619gHpSiOXL._AC_SY200_.jpg" alt="">
+                                     </div>
+                                     <div class="intro">
+                                                     <img class="intra" src="https://m.media-amazon.com/images/I/61xNG4wjOuL._AC_SY200_.jpg" alt="">
+                                     </div>
+
+                             </div>
+
+
+        </div>
+        <hr>
+         <div id="end"> 
+                 <p class="pend">See personalized recommendation</p>
+                    <br>
+                 <a class="weed" href="Sign-up.html"><button class="ebtn">sign-in</button></a> 
+                 
+                      <br>
+                 <p class="endp"><small>New customer? <a href="#" class="aend" >Start here.</a></small></p>
+         </div>
+         <br>
+         <div id="last"><a href="index.html">Back to top</a></div>
+    </main>
+
+    
+           <footer id="finish">
+                     <div class="donea">
+                            <p class="fina">Get to know us</p>
+                              <p class="finaa">
+                                   About Us
+                                       <br>
+                                       <br>
+                                   Careers 
+                                     <br><br>
+                                   Press Release
+                                   <br><br>
+                                   Amazon Science
+                               </p>
+
+
+
+                     </div>
+                     <div class="doneb">
+                             <p class="fina">Contact us</p>  
+                             <p class="finaa">
+                                   <a class="kingvj" href="https://www.instagram.com/">@vaishnavvv__45</a>
+                                   <br><br>
+                                   Facebook
+                                       <br>
+                                       <br>
+                                     Twitter
+                                     <br><br>
+                                     Instagram
+                                   <br><br>
+                                     Linked.in
+                               </p>
+                     </div>
+                     <div class="donec">
+                              <p class="fina">Make money with Us</p>
+                              <p class="finaa">
+                                       Sell on Amazon
+                                       <br>
+                                       <br>
+                                      Sell under Amazon Accelerator
+                                     <br><br>
+                                       Protect And Build Your Brand
+                                   <br><br>
+                                      Amazon Global Selling
+                                      <br><br>
+                                      Become an Affiliate
+                                      <br><br>
+                                      Fulfilment by Amazon
+                                      <br><br>
+                                      Advise your Product
+                                      <br><br>
+                                      Amazon Pay on Merchants
+                               </p>
+                     </div>
+                     <div class="doned">
+                              <p class="fina">Let Us Help You</p>
+                              <p class="finaa">
+                                   COVID-19 and Amazon
+                                   <br>
+                                   <br>
+                                   Your Account
+                                 <br><br>
+                                  Return Center
+                               <br><br>
+                                  100% Purchase Product
+                                  <br><br>
+                                 Amazon App Download
+                                 <br><br>
+                                 Help
+                     </div>
+                     
+                    
+           </footer>  
+               
+              
+        
+</div>
+</body>
+</html>

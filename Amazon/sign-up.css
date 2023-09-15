@@ -1,0 +1,170 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNwYWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+  
+    
+}
+button
+{
+    width: 100px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 60px;
+    
+}
+form
+{
+    width: 450px;
+    height: 400px;
+ 
+    position: absolute;
+     top: 20%;
+     left: 34%;
+     padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 0px;
+    /*background-image: url("https://images.unsplash.com/photo-1692639969478-a0dad77774c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;*/
+    color: white;
+    border-radius: 10px;
+}
+#cname
+{
+     width: 300px;
+   
+}
+#lname
+{
+    width: 300px;
+}
+#email
+{
+    width: 300px;
+}
+#phone
+{
+    width: 300px;
+}
+#quantity
+{
+    width: 100px;
+}
+#pass
+{
+    width: 300px;
+}
+#submit
+{
+    
+    width: 100px;
+}
+.submit
+{
+    
+    position: relative;
+    padding-left: 100px;
+   
+}
+#reset
+{
+    width: 100px; 
+}
+.reset
+{
+    
+    
+    position: relative;
+    padding-left: 100px;
+    
+}
+#finish
+{
+    width: 77%;
+    height: 350px;
+    background-color: #001D3D;
+    margin-top:60%;
+   
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    padding-left: 23%;
+     
+   
+}
+.donea
+{
+    width: 200px;
+    height: 250px;
+    font-size: 17px;
+ 
+  
+    font-size: 20px;
+    margin-right: 0%;
+}
+.doneb
+{
+    width: 200px;
+    height: 250px;
+    font-size: 17px;
+    margin-left: 0%;
+   
+    font-size: 20px;
+}
+.donec
+{
+    width: 250px;
+    height: 350px;
+    font-size: 17px;
+   
+   
+    font-size: 20px;
+    
+}
+.doned
+{
+    width: 200px;
+    height: 250px;
+    font-size: 17px;
+    margin-right: 90px;
+    font-size: 20px;
+   
+    
+}
+.fina
+{
+    color: white;
+    padding-top: 10px;
+    text-decoration: white 1px solid underline;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: bold;
+}
+.kingvj
+{
+    font-size: 15px;
+    color: white;
+}
+.finaa
+{
+    color: #eeeeee;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}

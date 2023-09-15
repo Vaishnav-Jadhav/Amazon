@@ -1,0 +1,522 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+#amazon
+{
+    width: 100%;
+    
+    border: 3px  solid;
+    margin: 0%;
+    background-color: #DEE2E6;
+}
+#main
+{
+    width: 100%;
+    height: 50px;
+    background-color: #0f1111;
+    position: fixed;
+    top: 0%;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name{
+
+   color: orange;
+   font-weight: normal;
+   padding-left: 10px;
+}
+a{
+    
+    color: white;
+    font-size: 25px;
+    margin-right: 190px;
+    text-decoration: none;
+  
+}
+#btn
+{
+    margin-left: 60px;
+    color: white;
+    background-color: rgb(3, 3, 44);
+    
+}
+input
+{
+    width: 200px; 
+    text-align: center;   
+}
+.headbtn
+{
+    background-color: #f08804;
+    width: 80px;
+    border-radius: 5px;
+}
+#main-b
+{
+    height: 40px;
+    background-color: rgb(59, 87, 87);
+    padding-top: 10px;
+    position: sticky;
+    z-index: 1;
+    top: 50px;
+    
+}
+
+.fam
+{
+    color: white;
+    font-size: 16px;
+    margin-right: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+    padding-bottom: 0%;
+    transform: scale(0.35);
+    
+}
+.fama
+{
+    color: white;
+    font-size: 16px;
+    margin-right: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px ;
+    padding-bottom: 0%;
+   padding-left: 25px;   
+}
+#backimg
+{
+    width: 100%;
+    height: 600px;
+    border: 1px white solid;
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img18/Lawn_Garden/Ud/July2023/Monsoongd/August/GW/Gw-hero-Pc-Unrec-3000x1200._CB597023311_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 47px;
+}
+
+#divmanagement
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-bottom: 5px;
+    
+}
+.div-a
+{
+    width: 350px;
+    height: 311px;
+  
+    background-color: #F8F9FA;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 19px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    position: static;
+}
+.divaimg
+{
+    
+    width: 250px;
+    padding-top: 30px;
+
+}
+.div-b
+{
+    width: 350px;
+    height: 311px;
+    margin-top: 35px;
+    background-color: #F8F9FA;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 20px;
+    position: static;
+} 
+.divbimg
+{
+   
+    width: 250px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+.div-c
+{
+        width: 350px;
+        height: 311px;
+        
+        background-color: #F8F9FA;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 20px;
+        margin-top: 35px;
+        font-size: 19px;
+        position: static;
+}   
+.divcimg
+{
+     width: 250px;
+     padding-top: 30px;
+     cursor: pointer;
+     
+}
+.div-d
+{
+        width: 350px;
+        height: 311px;
+        margin-top: 35px;
+        background-color: #F8F9FA;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 20px;
+        font-size: 19px;
+        position: static;
+}   
+.divdimg
+{
+       width: 250px;
+       padding-top: 30px;
+       cursor: pointer;
+}    
+#maindivb
+{
+   width: 97%;
+   height: 500px;
+
+   margin-top: 15px;
+   background-color: #CEDAD4;
+   margin-left: 20px;
+   margin-right: 20px;
+   text-align: center;
+}
+.divbheading
+{
+   font-size: 25px;
+   text-transform: capitalize;
+   font-weight: bold;
+   display: block;
+   padding-top: 10px;
+}
+.maindeal
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.deals
+{
+    border: 1px rgb(112, 107, 107) solid;
+    width: 25%;
+    height: 390px;
+    background-color: #eeeeee;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.dealsa
+{
+    border: 1px rgb(112, 107, 107) solid;
+    width: 25%;
+    height: 390px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.deals
+{
+    border: 1px rgb(112, 107, 107) solid;
+    width: 25%;
+    height: 390px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.dealimga
+{
+    padding-top: 30px;
+    cursor: pointer;
+   
+}
+.dealimgc
+{
+    height: 193px;
+    padding-top: 30px;
+    cursor: pointer;
+    border-bottom: 10px;
+    cursor: pointer;
+}
+.dealbtn
+{
+    margin-top: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.dealbtnd
+{
+    margin-top: 30px;
+    background-color: red;
+    color: #dddddd;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+#maindivc
+{
+    width: 97%;
+    height: 350px;
+    background-color: #CEDAD4;
+   
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    
+}
+#maincname
+{
+    font-size: 25px;
+   text-transform: capitalize;
+   font-weight: bold;
+   display: block;
+   padding-top: 10px;
+   
+   
+}
+#dealsoftheday
+{
+    width: 90%;
+    height: 250px;
+
+    margin-left: 70px;
+    padding-right: 10px;
+    margin-top: 20px;
+    background-color: #fffafb;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.grosary
+{
+    width: 150px;
+    height: 200px;
+    
+    margin: 20px;
+   
+}
+#flipkart
+{
+    width: 98%;
+    height: 300px;
+    margin-top: 20px;
+    background-color:  #CEDAD4;
+    
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+  
+}
+.womencloth
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.baicloth
+{
+    width: 97%;
+    height: 200px;
+    
+    margin: 20px;
+    display: flex;
+    background-color: #f4f4ed;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.baiimg
+{
+   width: 160px;
+   height: 160px;
+  
+   margin: 10px;
+   margin-top: 20px;
+   
+}
+.imgconst
+{
+   width: 160px;
+}
+
+#electronics
+{
+    width: 98%;
+    height: 270px;
+    border: 1px silver solid;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #CEDAD4;
+   
+}
+
+.electric
+{
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 10px;
+    
+}
+.electro
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.intro
+{
+    width: 160px;
+    height: 150px;
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+.intra
+{
+    width: 160px;
+    cursor: pointer;
+}
+#end
+{
+    width: 99.8%;
+    height: 100px;
+    margin-top: 0px;
+    padding-top: 30px;
+   
+    font-size: 15px;
+    text-align: center;
+    background-color: #CEDAD4;
+}
+.weed
+{
+    padding-left: 180px;
+}
+.ebtn{
+    width: 200px;
+    font-size: 20px;
+    padding-top: 0%;
+    border-radius: 5px;
+    background-color: #ff8811;
+    cursor: pointer;
+}
+.aend
+{
+   font-size: 15px;
+   color: #0f1111;
+   cursor: pointer;
+}
+.endp
+{
+    text-align: center;
+    padding-left: 13%;
+    margin-bottom: 0%;
+}
+#last
+{
+    width: 90%;
+    height: 40px;
+    background-color: #003566;
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-weight: normal;
+    padding-left: 10%;
+}
+#finish
+{
+    width: 77%;
+    height: 350px;
+    background-color: #001D3D;
+    padding-top:50px;
+   
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    padding-left: 23%;
+     
+   
+}
+.donea
+{
+    width: 200px;
+    height: 250px;
+    font-size: 17px;
+ 
+  
+    font-size: 20px;
+    margin-right: 0%;
+}
+.doneb
+{
+    width: 200px;
+    height: 250px;
+    font-size: 17px;
+    margin-left: 0%;
+   
+    font-size: 20px;
+}
+.donec
+{
+    width: 250px;
+    height: 350px;
+    font-size: 17px;
+   
+   
+    font-size: 20px;
+    
+}
+.doned
+{
+    width: 200px;
+    height: 250px;
+    font-size: 17px;
+    margin-right: 90px;
+   
+    font-size: 20px;
+    
+}
+.fina
+{
+    color: white;
+    padding-top: 10px;
+    text-decoration: white 1px solid underline;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: bold;
+}
+.kingvj
+{
+    font-size: 15px;
+}
+.finaa
+{
+    color: #eeeeee;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
