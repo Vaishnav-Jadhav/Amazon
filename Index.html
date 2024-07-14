@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+     <title>Amazon</title>
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="container-fluid m-0 p-0 text-light" onload="bodyLoad()">
+    <div id="darkBg"></div>
+    <!--Hidden menu start-->
+    <div class="hiddenMenuBar" id="hiddenMenuBar">
+      <div class="menuHeader bg-dark text-light d-flex justify-content-between">
+           <h3 class="text-start"><span class="bi bi-person-circle"></span> Hello, Sign in</h3>
+           <button class="btn btn-close text-bg-light" id="btnClose"></button>
+      </div>
+      <div class="menuBody">
+           <h3>Trending</h3>
+           <ul class="list-unstyled">
+                <li>Best Sells</li>
+                <li>New Release</li>
+                <li>Movers and Shakers</li>
+           </ul>
+           <div class="seperator"></div>
+           <h3>Digital Content and Devices</h3>
+           <ul class="list-unstyled">
+                 <li>Amazon mini Tv-FREE entertainment</li>
+                 <li>
+                     <p>Echo&Alexa</p> <span class="bi bi-chevron-right text-black"></span>
+                 </li>
+                 <li>
+                     <p>Fire TV</p> <span class="bi bi-chevron-right text-black"></span>
+                 </li>
+                 <li>
+                     <p>Kindle E-Readers & eBooks</p> <span class="bi bi-chevron-right text-black"></span>
+                 </li>
+                 <li>
+                     <p>Audiable Audiobooks</p> <span class="bi bi-chevron-right text-black"></span>
+                 </li>
+                 <li>
+                     <p>Amazon Prime Video</p> <span class="bi bi-chevron-right text-black"></span>
+                 </li>
+                 <li>
+                     <p>Amazon Prime Music</p> <span class="bi bi-chevron-right text-black"></span>
+                 </li>
+            </ul>
+            <div class="seperator"></div>
+            <h3>Shop by Category</h3>
+            <ul class="list-unstyled">
+                  <li>
+                     <p>Mobiles, Computers</p> <span class="bi bi-chevron-right text-black"></span>
+                  </li>
+                  <li>
+                     <p>TV, Appliances, Electronics</p> <span class="bi bi-chevron-right text-black"></span>
+                  </li>
+                  <li>
+                     <p>Men's Fashion</p> <span class="bi bi-chevron-right text-black"></span>
+                  </li>
+                  <li>
+                     <p>Women's Fashion</p> <span class="bi bi-chevron-right text-black"></span>
+                  </li>
+                  <li>
+                   <p>See all <span class="bi bi-chevron-down text-black"></span></p> 
+                  </li>
+            </ul>
+            <div class="seperator"></div>
+            <h3>Programs & features</h3>
+            <ul class="list-unstyled">
+                  <li>Amazon Pay</li>
+                  <li>
+                    <p>Gifts Cards & Moblie Recharges</p> <span class="bi bi-chevron-right text-black"></span>
+                  </li>
+                  <li>Amazon Launchpad</li>
+                  <li>Amazon Business</li>
+                  <li>
+                   <p>See all <span class="bi bi-chevron-down"></span></p>
+                  </li>
+            </ul>
+            <div class="seperator"></div>
+            <h3>Help & Setting</h3>
+            <ul class="list-unstyled">
+                 <li>Your Account</li>
+                 <li>Customer Services</li>
+                 <li>Sign in</li>
+             </ul>
+      </div>
+    </div>
+    <div id="dark">
+
+    </div>
+    <!--Hidden menu end-->
+    <!--Amazon Prime toggle start-->
+    <div id="primeToggle">
+      <div class="bi bi-triangle-fill text-white" id="triangle">
+
+      </div>
+      <div class="primeBg">
+        <img src="/public/assets/amazonPrime.jpg" alt="">
+      </div>
+    </div>
+    <!--Amazon Prime toggle End-->
+
+    <!--header start-->
+    <header class="bg-dark ">
+        <div>
+          <a href="#">
+            <img src="/public/assets/Amazon-Logo.png" height="35px" class="p-1">
+          </a>
+        </div>
+        <div class="d-flex">
+          <span class="align-content-center">
+            <span class="headerLocation bi bi-geo-alt mt-1"></span>
+          </span>
+          <span class="headerAddress">
+            <p class="m-0">Delivering to</p>
+            <h2 class="m-0">India</h2>
+          </span>
+        </div>
+        <span class="input-group my-2 w-50">
+          <select name="selectCategory" id="selectCategory" class="input-group-text text-start">
+          
+          </select>
+          <input type="text" class="form-control" placeholder="Search Amazon.in">
+          <button class="btn btn-warning"><span class="bi bi-search"></span></button>
+        </span>
+        <div class="d-flex">
+          <i class="align-content-center">
+            <img src="/public/assets/indianFlag.png" width="25px">
+          </i>
+          <h2 class="headerCountry ps-1">EN<i class="bi bi-chevron-down" style="font-size: 10px;"></i></h2>
+        </div>
+        <div class="headerSignIn">
+          <span>
+            <p>Hello,sign in</p>
+          </span>
+          <span>
+            <h2>Accounts & lists <span class="bi bi-chevron-down"></span></h2>
+          </span>
+        </div>
+        <div class="headerSignIn">
+          <span>
+            <p>Return</p>
+          </span>
+          <span>
+            <h2>& Orders</h2>
+          </span>
+        </div>
+        <div class="d-flex cart py-0 px-1">
+          <span class="bi bi-cart2 cartSpan"></span>
+          <span class="headerCart pb-1">
+            <p class="mt-1 mb-0">cart</p>
+          </span>
+        </div>
+    </header>
+    <!--header End-->
+
+    <!--Nav start-->
+    <nav>
+        <a href="#" id="menu">
+          <span class="bi bi-list" style="font-weight: bolder;"></span>All
+        </a>
+        <a href="#">AmazonMini TV</a>
+        <a href="#">Sell</a>
+        <a href="#">Best Seller</a>
+        <a href="#">Mobile</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Electronics</a>
+        <a href="#" id="primeToggleBtn">Prime <span class="bi bi-chevron-down"></span></a>
+        <a href="#">Customer Service</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home&Kitchen</a>
+        <a href="#">New Release</a>
+        <a href="#">Amazon Pay</a>
+        <a href="#">Comments</a>
+        <a href="#">Books</a>
+    </nav>
+    <!--Nav End-->
+
+    <!--Section Start-->
+    <section>
+        <!--slider start-->
+        <div class="carousel slide mx-2 " data-bs-ride="carousel" id="slidingBanner">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img src="/public/assets/slideImg.jpg" alt="slider" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="/public/assets/slider6.jpg" alt="slider" class="d-block w-100" data-bs-interval="200">
+            </div>
+            <div class="carousel-item">
+              <img src="/public/assets/slideImg2.jpg" alt="slider" class="d-block w-100" data-bs-interval="200">
+            </div>
+            <div class="carousel-item">
+              <img src="/public/assets/slideImg3.jpg" alt="slider" class="d-block w-100" data-bs-interval="200">
+            </div>
+            <div class="carousel-item">
+              <img src="/public/assets/slideImg4.jpg" alt="slider" class="d-block w-100" data-bs-interval="200">
+            </div>
+            <div class="carousel-item">
+              <img src="/public/assets/slideImg5.jpeg" alt="slider" class="d-block w-100" data-bs-interval="700">
+            </div>
+            <button class="carousel-control-prev mx-2" data-bs-slide="prev" data-bs-target="#slidingBanner">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next mx-2" data-bs-slide="next" data-bs-target="#slidingBanner">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <!--slider End-->
+        <!--row1 for banners start-->
+        <div class="cardSection mx-3 ">
+                   <!--Cart1.1 start-->
+          <div class="card mx-2 rounded-0 border-0">
+            <div class="card-body">
+              <h3 class="text-black">Revamp your home in new style</h3>
+              <div class="d-flex ">
+                <div>
+                  <img src="/public/assets/Home_furnishings_2.jpg" alt="">
+                  <p class="text-black">Cushions,Covers & many more</p>
+                </div>
+                <div>
+                  <img src="/public/assets/astraunots.jpg" alt="">
+                  <p class="text-black">Vaces & more</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/Home_lighting_2.jpg" alt="">
+                  <p class="text-black">Lighting Solutions</p>
+                </div>
+                <div>
+                  <img src="/public/assets/Home_storage_1.jpg" alt="">
+                  <p class="text-black">Home Storage</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="card-footer border-0 bg-white">
+              <a href="#">see more</a>
+            </div>
+          </div>
+                            <!--Cart1.2 start-->
+          <div class="card mx-2 rounded-0 border-0">
+            <div class="card-body">
+              <h3 class="text-black">Appliances for your Home | Up to 50% off</h3>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/Appliances1.jpg" alt="">
+                  <p class="text-black">Microwaves</p>
+                </div>
+                <div>
+                  <img src="/public/assets/Appliances2.jpg" alt="">
+                  <p class="text-black">Air Conditioner</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/Appliances3.jpg" alt="">
+                  <p class="text-black">Refrigirator</p>
+                </div>
+                <div>
+                  <img src="/public/assets/washingMachine.jpg" alt="">
+                  <p class="text-black">Washing Machines</p>
+                </div>
+              </div>  
+            </div>
+            <div class="card-footer border-0 bg-white">
+              <a href="#">Explore All</a>
+            </div>
+          </div>
+                                  <!--Cart1.3 start-->
+          <div class="card mx-2 rounded-0 border-0">
+            <div class="card-body">
+              <h3 class="text-black">Starting Rs159 | Baby essentials</h3>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/babyDipers.jpg" alt="">
+                  <p class="text-black">Starting rs159 | baby Dipers & wipes</p>
+                </div>
+                <div>
+                  <img src="/public/assets/babyToys.jpg" alt="">
+                  <p class="text-black">Starting rs179 | Cloths & diapers</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/bathtub.jpg" alt="">
+                  <p class="text-black">Starting rs229 | Cradels & more</p>
+                </div>
+                <div>
+                  <img src="/public/assets/cloth.jpg" alt="">
+                  <p class="text-black">Starting rs999 | Cloths & more</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#">Shop now</a>
+            </div>
+          </div>
+                                  <!--Cart1.4 start-->
+          <div class="card mx-2 rounded-0 border-0">
+            <div class="card-body">
+              <h3 class="text-black">Up to 60% off | Fashion for womens</h3>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/girlFashion.jpg" alt="">
+                  <p class="text-black">Women's Clothing</p>
+                </div>
+                <div>
+                  <img src="/public/assets/jewellery.jpg" alt="">
+                  <p class="text-black">Fashion jewellery</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img src="/public/assets/footwere & handbags.jpg" alt="">
+                  <p class="text-black">Footwere + Handbags</p>
+                </div>
+                <div>
+                  <img src="/public/assets/watches&Accesories.jpg" alt="">
+                  <p class="text-black">Watches</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#">End of the sell</a>  
+            </div>
+          </div>
+        </div>
+        <!--row1 for banners End-->
+
+        <!--row2 for banner start-->
+        <div class="cardSection2 mx-3 ">
+                      <!--Cart2.1 start-->
+
+            <div class="card mx-2 rounded-0 border-0">
+              <div class="card-body">
+                <h3 class="text-black">Professional Tools, testing & more</h3>
+                <div class="d-flex ">
+                  <div>
+                    <img src="/public/assets/Tools1x._SY116_CB424026090_.jpg" alt="">
+                    <p class="text-black">Professional Tools</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/tool2._SY116_CB643952439_.jpg" alt="">
+                    <p class="text-black">Measuring instruments</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/tool3._SY116_CB643952439_.jpg" alt="">
+                    <p class="text-black">Cleaning supplies</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/med1x._SY116_CB424026091_.jpg" alt="">
+                    <p class="text-black">MEdical supplies</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#">see more</a>
+              </div>
+            </div>
+                              <!--Cart2.2 start-->
+            <div class="card mx-2 rounded-0 border-0">
+              <div class="card-body">
+                <h3 class="text-black">Automotive essentials | Up to 60% off</h3>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/Glasscare.jpg" alt="">
+                    <p class="text-black">Cleaning Accesories</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/Rim_tyrecare.jpg" alt="">
+                    <p class="text-black">Tyres & rim care</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/Vega_helmet.jpg" alt="">
+                    <p class="text-black">Helmets</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/Vaccum1.jpg" alt="">
+                    <p class="text-black">Vaccume cleaner</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#">Explore All</a>
+              </div>
+            </div>
+                                    <!--Cart2.3 start-->
+            <div class="card mx-2 rounded-0 border-0">
+              <div class="card-body">
+                <h3 class="text-black">Starting Rs199 | Amazon Brans & more</h3>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/bedshits.jpg" alt="">
+                    <p class="text-black">Starting rs199 | bedsheets</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/curtons.jpg" alt="">
+                    <p class="text-black">Starting rs199 | Curtons</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/ironingboard.jpg" alt="">
+                    <p class="text-black">Min. 40% off | ironing board </p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/homeDecore.jpg" alt="">
+                    <p class="text-black">Up to 60% off | Home decor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+                                    <!--Cart2.4 start-->
+            <div class="card mx-2 rounded-0 border-0">
+              <div class="card-body">
+                <h3 class="text-black">Jackets, Toys & many more</h3>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/QC_PC_186x116_7_PB._SY116_CB560732407_.jpg" alt="">
+                    <p class="text-black">Starting rs99 | Toys & games</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/1x_spb._SY116_CB580758260_ (1).jpeg" alt="">
+                    <p class="text-black">Up to 60% off | jackets & more</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <img src="/public/assets/homeDecore.jpg" alt="">
+                    <p class="text-black">Starting from rs175</p>
+                  </div>
+                  <div>
+                    <img src="/public/assets/bottles.jpg" alt="">
+                    <p class="text-black">60% off | On Storage & Racks </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#">End of the sell</a>  
+              </div>
+            </div>
+    </div>
+        <!--row2 for banner End-->
+        
+        <!--Product Image slider Start-->
+    <div class="productSlider mx-4">
+        <div>
+          <h2>Up to 80% off | Fashionable and trendy clothes from Small businesses</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div class="imgContainer">
+            <img src="/public/assets/fashion1.jpg" alt="">
+            <img src="/public/assets/fashion2.jpg" alt="">
+            <img src="/public/assets/fashion3.jpg" alt="">
+            <img src="/public/assets/fashion4.jpg" alt="">
+            <img src="/public/assets/fashion5.jpg" alt="">
+            <img src="/public/assets/fashion6.jpg" alt="">
+            <img src="/public/assets/fashion7.jpg" alt="">
+            <img src="/public/assets/fashion8.jpg" alt="">
+            <img src="/public/assets/fashion9.jpg" alt="">
+            <img src="/public/assets/fashion10.jpg" alt="">
+            <img src="/public/assets/fashion11.jpg" alt="">
+            <img src="/public/assets/fashion12.jpg" alt="">
+            <img src="/public/assets/fashion13.jpg" alt="">
+            <img src="/public/assets/fashion14.jpg" alt="">
+        </div>
+        <button class="slideBtnLeft btn btn-light justify-content-between"><span class="bi bi-chevron-left text-dark"></span></button>
+        <button class="slideBtnRight btn btn-light"><span class="bi bi-chevron-right text-dark"></span></button>
+    </div>
+    <div class="productSlider mx-4">
+      <div>
+        <h2>More items to consider</h2>
+        <a href="#">See more</a>
+      </div>
+      <div class="imgContainer">
+          <img src="/public/assets/product1.jpg" alt="">
+          <img src="/public/assets/product2.jpg" alt="">
+          <img src="/public/assets/product3.jpg" alt="">
+          <img src="/public/assets/product4.jpg" alt="">
+          <img src="/public/assets/product5.jpg" alt="">
+          <img src="/public/assets/product6.jpg" alt="">
+          <img src="/public/assets/product7.jpg" alt="">
+          <img src="/public/assets/product8.jpg" alt="">
+          <img src="/public/assets/product9.jpg" alt="">
+          <img src="/public/assets/product10.jpg" alt="">
+          <img src="/public/assets/product11.jpg" alt="">
+          <img src="/public/assets/product12.jpg" alt="">
+          <img src="/public/assets/product13.jpg" alt="">
+          <img src="/public/assets/product14.jpg" alt="">
+          <img src="/public/assets/product15.jpg" alt="">
+          <img src="/public/assets/product16.jpg" alt="">
+          <img src="/public/assets/product17.jpg" alt="">
+          <img src="/public/assets/product18.jpg" alt="">
+          <img src="/public/assets/product19.jpg" alt="">
+          <img src="/public/assets/product20.jpg" alt="">
+      </div>
+      <button class="slideBtnLeft btn btn-light justify-content-between"><span class="bi bi-chevron-left text-dark"></span></button>
+      <button class="slideBtnRight btn btn-light"><span class="bi bi-chevron-right text-dark"></span></button>
+  </div>
+        <!--Product image slider End-->
+    </section>
+    <!--Section End-->
+    <!--Footer Start-->
+    <footer>
+      <div class="btn btn-dark w-100 border rounded-0">Back to top</div>
+    </footer>
+    <!--Footer End-->
+    <script src="/src/script/amazon.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
